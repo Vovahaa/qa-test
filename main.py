@@ -1,14 +1,14 @@
-def myfunc(a, b, c):
-    if a >= b: print("We are out of task")
-    while a < b:
-        print(a)
-        a += c
-        if a >= b:
-            print(a)
-            #break
+
+import random
 
 
-a = int(input())
-b = int(input())
-c = int(input())
-myfunc(a, b, c)
+def generate_random_list(list_length):
+    random_list = []
+    for i in range(random.randint(0, list_length)):
+        n = random.randint(0, 9)
+        random_list.append(n)
+    return random_list
+
+
+length = int(input())
+print(generate_random_list(length))
