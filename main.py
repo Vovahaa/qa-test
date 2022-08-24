@@ -1,12 +1,11 @@
 def myfunc(a, b, c):
-    if a > b:
-        print("Great!:)")
-    elif a == b:
-        if c > b:
-            print("You got it!:)")
-        else: print("Ohh, no!:(")
-    elif a < b:
-        print("Ohh, No!:(")
+    if a >= b: print("We are out of task")
+    while a < b:
+        print(a)
+        a += c
+        if a >= b:
+            print(a)
+            #break
 
 
 a = int(input())
